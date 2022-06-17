@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/backend/server.js",
+            "env": { 
+                "KEPLOY_MODE": "off",
+                "KEPLOY_APP_NAME": "Exercise",
+                "KEPLOY_APP_HOST": "localhost",
+                "KEPLOY_APP_PORT": "5050",
+                "KEPLOY_APP_DELAY": "5",
+                "KEPLOY_APP_TIMEOUT": "100",
+                "KEPLOY_SERVER_URL": "http://localhost:8081/api"
+            }
+        }
+    ]
+}
